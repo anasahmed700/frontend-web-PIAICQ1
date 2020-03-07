@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head><title>Box Dimensions</title>
+    <style>
+        /* Box Dimensions: Width, Height */
+        div.box {
+            height: 300px;
+            width: 300px;
+            background-color: #bbbbaa;
+        }
+
+        p {
+            height: 75%;
+            width: 75%;
+            background-color: #0088dd;
+        }
+
+        /* Limiting Width: min-width, max-width */
+        td.description {
+            min-width: 200px;
+            max-width: 650px;
+            text-align: left;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        th {
+            border-bottom: 1px solid #0088dd;
+            text-align: left;
+            color: #0088dd;
+            font-weight: normal;
+        }
+
+        td {
+            min-width: 150px;
+            min-height: 200px;
+            vertical-align: top;
+            line-height: 1.4em;
+        }
+        p.one{
+            overflow: hidden;
+        }
+        p.two{
+            overflow: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Box Dimensions: Width, Height</h1>
+    <div class="box">
+        <p>The Moog company pioneered the commercial
+            manufacture of modular voltage-controlled
+            analog synthesizer systems in the early
+            1950s.</p>
+    </div>
+    <h1>Limiting Width: min-width, max-width</h1>
+    <table>
+        <tbody>
+            <tr>
+                <th>Photo</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td><img src="./images/rhodes.jpg" alt="Frender Rhodes" height="150" width="200"></td>
+                <td class="description">The Rhodes piano is an electro-mechanical piano, invented by Harold Rhodes
+                    during
+                    the fifties and later manufactured in a number of models, first in collaboration
+                    with Fender and after 1965 by CBS. It employs a piano-like keyboard with hammers
+                    that hit small metal tines, amplified by electromagnetic pickups.</td>
+                <td>$1400</td>
+            </tr>
+            <tr>
+                <td><img src="./images/wurlitzer.jpg" alt="Wurlitzer EP200" height="150" width="200"></td>
+                <td class="description">The Wurlitzer electric piano is an electro-mechanical piano, created by
+                    the Rudolph Wurlitzer Company of Mississippi. The Wurlitzer company itself never called
+                    the instrument an "electric piano", instead inventing the phrase "Electronic Piano" and
+                    using this as a trademark throughout the production of the instrument. It employs a
+                    piano-like keyboard with hammers that hit small metal tines, amplified by
+                    electromagnetic pickups.</td>
+                <td>$1600</td>
+            </tr>
+            <tr>
+                <td><img src="./images/clavinet.jpg" alt="Hohner Clavinet D6" width="200" height="150"></td>
+                <td class="description">A Clavinet is an electronically amplified clavichord manufactured by the Hohner
+                    company. Each key uses a rubber tip to perform a hammer on a string. Its distinctive
+                    bright staccato sound is often compared to that of an electric guitar. Various
+                    models were produced over the years, including the models I, II, L, C, D6, and E7.</td>
+                <td>$1200</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Fender Stratocaster</h2>
+    <p class="one">The Fender Stratocaster or "Strat" is one of the most popular electric guitars of
+        all time, and its design has been copied by many guitar makers. It was designed by Leo The 
+        Wurlitzer company itself never called the instrument an "electric piano", instead inventing the 
+        phrase "Electronic Piano" and using this as a trademark throughout the production of the 
+        instrument. It employs a piano-like keyboard with hammers that hit small metal tines, amplified 
+        by electromagnetic pickups. </p>
+    <h2>Gibson Les Paul</h2>
+    <p class="two">The Gibson Les Paul is a solid body electric guitar that was first sold in 1952.
+        The Les Paul was designed by Ted McCarty The Wurlitzer company itself never called the instrument 
+        an "electric piano", instead inventing the phrase "Electronic Piano" and using this as a trademark 
+        throughout the production of the instrument. It employs a piano-like keyboard with hammers that hit 
+        small metal tines, amplified by electromagnetic pickups. </p>
+</body>
+
+</html>

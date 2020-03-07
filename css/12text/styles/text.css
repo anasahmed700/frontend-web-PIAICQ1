@@ -1,0 +1,47 @@
+body{
+    background-image: "/12text/images/bg.jpg";
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 200%;
+    word-spacing: 8px;
+}
+h2{
+    text-transform: uppercase;
+    text-decoration: overline;
+    letter-spacing: 5px;
+    text-indent: 20px;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: justify;
+}
+p::first-line{
+    font-weight: bold;
+}
+.credits{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-align: right;
+    background-color: #cccccc;
+    color: #ffffff;
+    text-shadow: 2px 2px 7px #111111;
+}
+p.credits::first-letter{
+    font-size: 200%;
+}
+a:link{color: blue;}
+a:visited{color: blueviolet;}
+a:hover{color: coral;}
+a:active{color: crimson;}
+@font-face{
+    font-family: 'ChunkFiveRegular';
+    src: url(fonts/chunkfive.eot);
+}

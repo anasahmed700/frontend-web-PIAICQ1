@@ -1,0 +1,11 @@
+var arr = [1, 2, 45, 654, 24334, 2].splice(2);
+console.log(arr);
+var a = [1, 2, 3, 4, 5, 6, 7];
+console.log("initial value of a: " + a);
+var b = a.splice(2, 3);
+console.log("spliced elements are deleted from a: " + a);
+console.log("and stored in b: " + b);
+var c = a.splice(1, 2, "1", "23", "456");
+console.log("a is spliced and 3 items are added between index 0 and 3: " + a);
+console.log("spliced elements from a are stored in c: " + c);
+console.log("Hello");

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <!-- description: This contains a description of the page. This description is commonly used by search
+    engines to understand what the page is about -->
+    <meta name="description" content="An essay on installation art">
+    <!-- keywords: This contains a list of commaseparated words that a user might search on to find the page. -->
+    <meta name="keywords" content="installation, art, opinion" />
+    <!-- robots: This indicates whether search engines should add this page to their search results or not. A
+    value of noindex can be used if this page should not be added. A value of nofollow can be used
+    if search engines should add this page in their results but not any pages that it links to. -->
+    <meta name="robots" content="nofollow" />
+    <!-- The <meta> element also uses the http-equiv and content attributes in pairs. In our example, you can see
+    three instances of the httpequiv attribute. Each one has a different purpose: -->
+    <meta http-equiv="author" content="Jon Duckett" />
+    <!-- pragma: This prevents the browser from caching the page. (That is, storing it locally to save time
+    downloading it on subsequent visits.) -->
+    <meta http-equiv="pragma" content="no-cache" />
+    <!-- expires: Because browsers often cache the content of a page, the expires option can be used
+    to indicate when the page should expire (and no longer be cached). Note that the date must
+    be specified in the format shown. -->
+    <meta http-equiv="expires" content="Fri, 04 Apr 2014 23:59:59 GMT" />
+</head>
+
+<body>
+    <h3>Grouping text & element in a block:</h3>
+    <div>
+        <p>This para and list are in same block.</p>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+    </div>
+    <h3>Grouping text & inline element:</h3>
+    <p>
+        Anish Kapoor won the Turner Prize in 1991 and exhibited at the <span class="gallery">Tate
+            Modern</span> gallery in London in 2003.
+    </p>
+
+    <h3>iFrames</h3>
+    <iframe src="https://www.w3school.com" width="450" height="350"></iframe>
+</body>
+
+</html>

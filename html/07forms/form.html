@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <!-- Form structure  -->
+    <form action="http://localhost/" method="POST">
+        <p>
+            This is where the form controls will appear.
+        </p>
+        <p>
+            <h3>Text input</h3>
+            Username:
+            <input type="text" name="username" size="15" maxlength="30">
+        </p>
+        <p>
+            <h3>Password input</h3>
+            Password: 
+            <input type="password" name="password" size="15" maxlength="30">
+        </p>
+
+        <h3>Text area</h3> 
+        <p>What did you think of this gig?</p>
+        <textarea name="comment" cols="30" rows="4">Comment here...</textarea>
+
+        <p>
+            <h3>Radio buttons </h3>
+            Please select your favorite genre:<br>
+            <input type="radio" name="genre" value="rock" checked="checked">Rock
+            <input type="radio" name="genre" value="pup">Pop
+            <input type="radio" name="genre" value="jazz">Jazz
+        </p>
+        <p>
+            <h3>Checkbox </h3>
+            Please select your favorite music service(s): <br>
+            <input type="checkbox" name="service" value="itunes" checked="checked">i Tunes
+            <input type="checkbox" name="service" value="lastfm">Last.fm
+            <input type="checkbox" name="service" value="spotify">Spotify
+        </p>
+
+        <h3>Drop down menu </h3>
+        <p>What device do you listen to music on?</p>
+        <select name="device">
+            <option value="ipod">iPod</option>
+            <option value="radio">Radio</option>
+            <option value="computer">Computer</option>
+        </select>
+
+        <h3>Multiple select box </h3>
+        <p>
+            Do you play any of the following instruments? (You can select more than one option by holding
+            down control on a PC or command key on a Mac while selecting different options.)
+        </p>
+        <select name="instruments" size="3" multiple="multiple">
+            <option value="guitar" selected="selected">Guitar</option>
+            <option value="drum">Drum</option>
+            <option value="keyboard" selected="selected">Keyboard</option>
+            <option value="bass">Bass</option>
+        </select>
+
+        <h3>File input box </h3>
+        <p>Upload your song in MP3 format:</p>
+        <input type="file" name="user-song" /><br />
+        <input type="submit" value="Upload" />
+
+        <h3>Submit button</h3>
+        <p>Subscribe to our email list:</p>
+        <input type="text" name="email" />
+        <input type="submit" name="subscribe" value="Subscribe" />
+        <input type="image" src="submit.png"><br>
+
+        <h3>Button & Hidden controls </h3>
+        <button><img src="add.png" alt="add"></button>
+        <input type="hidden" name="bookmark" value="lyrics"><br><br>
+
+        <h3>Labelling form controls</h3>
+        <label>Age: <input type="text" name="age"></label><br>
+        Gender:
+        <input id="female" type="radio" name="gender" value="f">
+        <label for="female">Female</label>
+        <input id="male" type="radio" name="gender" value="m">
+        <label for="male">Male</label> <br><br>
+
+        <h3>Grouping Form Elements</h3>
+        <fieldset>
+            <legend>Contact details:</legend>
+            <label>Email: <br>
+                <input type="text" name="email"></label><br>
+            <label>Mobile: <br>
+                <input type="text" name="mobile"></label><br>
+        </fieldset>
+        <h3>HTML:5 form validation</h3>
+        <label for="username">Username:</label>
+        <input type="text" name="username" required="required" />
+        <label for="password">Password:</label>
+        <input type="password" name="password" required="required" /><br>
+        <label for="username">Departure date:</label>
+        <input type="date" name="departure">
+        <label for="email">Email:</label>
+        <input type="email" name="email">
+        <label for="url">URL:</label>
+        <input type="url" name="url" />
+        <input type="submit" value="Submit" /><br>
+        <label for="search">Search:</label>
+        <input type="search" name="search" placeholder="Search here..."/>
+        <input type="submit" value="search" />
+    </form>
+</body>
+
+</html>

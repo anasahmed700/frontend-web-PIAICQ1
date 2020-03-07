@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="http://localhost/" method="POST">
+            <fieldset>
+                <legend>Your Details:</legend>
+                <label>Name:
+                    <input type="text" name="name" required="required"><br>
+                </label>
+                <label>Email:
+                    <input type="email" name="email" required="required">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Review:</legend><br>
+                How did you hear about us? 
+                <select name="about-us">
+                    <option value="google">google</option>
+                    <option value="fb">facebook</option>
+                    <option value="twitter">twitter</option>
+                </select><br><br>
+
+                Would you visit again? <br>
+                <input type="radio" name="visit" value="yes" checked="checked">Yes
+                <input type="radio" name="visit" value="no">No
+                <input type="radio" name="visit" value="maybe">Maybe <br><br>
+
+                Comments: <br>
+                <textarea name="comment" cols="30" rows="10" placeholder="Comment here..."></textarea><br>
+
+                <input type="checkbox" name="subscribe">
+                Sign me up for email updates <br>
+                <input type="submit" value="Submit review">
+            </fieldset>
+        </form>
+    </body>
+</html>

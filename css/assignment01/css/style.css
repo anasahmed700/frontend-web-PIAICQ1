@@ -1,0 +1,18 @@
+body{
+    background-color: rgba(255, 200, 100, 0.5);
+    color: #0af;
+}
+/* take high priority than body */
+h2, h3{
+    color: chocolate;
+}
+
+/* take high priority due to more strict rule (if h3 in body element) */
+body h3{ 
+    color: #ff0000;
+}
+
+/* header's h3 have more specificity */
+body > header > h3{
+    color: rgba(143, 43, 93, .85);
+}
