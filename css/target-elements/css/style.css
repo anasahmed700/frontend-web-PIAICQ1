@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+body{
+    font-family: 'Baloo Chettan 2', cursive;
+    font-weight: 300 !important; margin-top: 70px;
+}
+body h1{
+    font-family: 'Press Start 2P', cursive;
+    margin: 20px 20px 1px 20px;
+    z-index: 4; position: fixed
+}
+
+#main-header{
+    border-bottom: 2px solid #000;
+    position: fixed;
+    width: 100vw; height: 60px;
+    background-color: rgba(255, 255, 255, .9);
+    top: 0px; z-index: 2;
+}
+/* Pseudo element */
+#main-header::after{
+    content: "";
+    display: block; width: 30px; height: 40px; top: 10px; left: 15px;
+    background-color: #f00; position: fixed;
+    z-index: 3;
+}
+
+#top-stories{
+    width: 1000px; margin: auto; margin-top: 20px;
+}
+
+article{
+    max-width: 30%; padding: 10px;
+    display: inline-block;
+    border: 1px solid #000;
+    /* offset-x | offset-y | blur-radius | density-radius | color */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .3);
+    transition: box-shadow 1s, background 3s;
+}
+article:hover{
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .7);
+    background: #aaa;
+}
+article:active{
+    opacity: 0.5;
+}
+.article-img{
+    height: 200px; width: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+    /* border-top-left-radius: 20px 50px; ---upper-left-edge lower-left-edge---  */
+    border-radius: 100%;
+}
+
+article>p>a{
+    font-style: italic;
+}
+
+.bold-link{
+    font-weight: 700;
+}
+/* Multiclass rule */
+.more-link.bold-link{
+    color: chocolate;
+}
+h3{
+    text-decoration: overline;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 1px 1px 5px #888;
+}
+.my-search{
+    display: block;
+    width: 90%; margin: 10px; padding: 10px 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+}
+.my-search:focus{
+    background: rgba(140, 203, 207, 0.3);
+    color: rgb(204, 127, 27); outline: none;
+}
+a:hover, a.more-link.bold-link:hover{
+    color: rgb(240, 1, 168);
+}
+.my-text{
+    height: 200px; max-height: 600px; width: 933px;
+    overflow: scroll; overflow-x: hidden;
+    border: 2px solid black; padding: 10px; padding-right: 25px; margin-top: 10px;
+}

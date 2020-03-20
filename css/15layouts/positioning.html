@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        width: 750px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #665544;
+    }
+
+    h2 {
+        background-color: #efefef;
+        padding: 10px;
+    }
+
+    p {
+        width: 450px;
+    }
+    h2.relative{
+        position: relative;
+        top: 10px;
+        left: 100px;
+    }
+    p.relative {
+        position: relative;
+        top: 10px;
+        left: 100px;
+    }
+
+    h2.absolute {
+        position: absolute;
+        top: 420px;
+        left: 350px;
+        width: 250px;
+        background-color: transparent;
+    }
+
+    h2.fixed {
+        position: fixed;
+        top: 520px;
+        left: 50px;
+        padding: 10px;
+        margin: 0px;
+        width: 100%;
+        background-color: #ededed;
+        z-index: 10;
+    }
+    p.fixed{
+        margin-top: 100px;
+    }
+    
+</style>
+
+<head>
+    <title>Positioning Scheme</title>
+</head>
+
+<body>
+    <h1>Normal Flow</h1>
+    <h2>The Evolution of the Bicycle for NORMAL Postioning</h2>
+    <p>In 1817 Baron von Drais invented a walking
+        machine that would help him get around the
+        royal gardens faster...</p>
+    <p>In 1817 Baron von Drais invented a walking
+        machine that would help him get around the
+        royal gardens faster...</p>
+
+    <h1>Relative Positioning</h1>
+    <h2 class="relative">The Evolution of the Bicycle for RELATIVE Postioning</h2>
+    <p class="relative">In 1817 Baron von Drais invented a walking
+        machine that would help him get around the
+        royal gardens faster...</p>
+
+    <h1>Absolute Positioning</h1>
+    <h2 class="absolute">The Evolution of the Bicycle for ABSOLUTE Positioning</h2>
+    <p class="absolute">In 1817 Baron von Drais invented a walking
+        machine that would help him get around the
+        royal gardens faster...</p>
+
+    <h1>Fixed Positioning</h1>
+    <h2 class="fixed">The Evolution of the Bicycle for FIXED Positioning</h2>
+    <p class="fixed">In 1817 Baron von Drais
+        invented a walking machine that would help him
+        get around the royal gardens faster...</p>
+</body>
+
+</html>
