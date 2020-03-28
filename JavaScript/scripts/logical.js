@@ -1,4 +1,4 @@
-console.log("AND operator:")
+console.log("AND operator:");
 var a = 60;
 var b = a > 50 && a < 70;
 console.log(b);
@@ -6,7 +6,7 @@ var c = 80;
 var d = c > 50 && c < 70;
 console.log(d);
 
-console.log("OR operator:")
+console.log("OR operator:");
 a = 60;
 b = a < 50 || a > 70;
 console.log(b);
@@ -14,12 +14,12 @@ c = 80;
 d = c < 50 || c > 70;
 console.log(d);
 
-console.log("NOT operator:")
+console.log("NOT operator:");
 a = 60;
 b = !(a < 50);
 console.log(b);
 
-console.log("DOUBLE NOT operator:")
+console.log("DOUBLE NOT operator:");
 c = !1; d = !!1;
 e = !0; f = !!0;
 console.log(c); console.log(d);
