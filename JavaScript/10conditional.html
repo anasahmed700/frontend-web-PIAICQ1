@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -12,10 +11,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <script>
+            var score = 0;
+            var userIQ;
             var x = prompt("Where does the Imam live?");
-            if (x === "Makkah"){
+            if (x === "Makkah" || x === "Mecca" || x === "makkah" || x === "mecca"){
+                score++;
+                userIQ = "genius";
                 alert("Correct!");
             }
+            else if(x === "Arab" || x === "arab"){
+                alert("Incorrect but close");
+                userIQ = "Average";
+            }
+            else{
+                score--;
+                userIQ = "Problematic";
+                alert("Incorrect!");
+            }
+            document.write("score = ", score);
+            document.write("<br>User IQ level = ", userIQ);
         </script>
     </head>
     <body>
