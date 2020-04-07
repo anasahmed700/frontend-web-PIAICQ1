@@ -22,7 +22,6 @@ for(var i = 0; i < cleanestCities.length; i++){
 if(matchFound === false){
     alert("This city is not listed in cleanest one!");
 }
-
 // Nested for loop example
 var firstNames = ["BlueRay ", "Upchuck ", "Lojack ", "Gizmo ", "Do-Rag "];
 var lastNames = ["Zzz", "Burp", "Dogbone", "Droop"];
@@ -43,3 +42,17 @@ for (var i = 0; i < firstNames.length; i++) {
     }
 }
 alert("Full Names: "+fullNames);
+
+var names = ["user1", "user2", "user3", "user4"];
+for (var index = 0; index <= names.length; index++) {
+    // const element = array[index];
+    if (names[index] === "user3") {
+        alert(names[index] + " is found at index " + index);
+    }
+}
+
+var num = prompt("Enter a number to print a its table: ");
+for (let i = 1; i < 11; i++) {
+    console.log(num + " x " + i + " = " + (num * i),"<br>");
+    
+}
