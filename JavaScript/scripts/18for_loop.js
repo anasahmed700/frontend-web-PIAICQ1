@@ -43,6 +43,7 @@ for (var i = 0; i < firstNames.length; i++) {
 }
 alert("Full Names: "+fullNames);
 
+// search an array element 
 var names = ["user1", "user2", "user3", "user4"];
 for (var index = 0; index <= names.length; index++) {
     // const element = array[index];
@@ -50,9 +51,34 @@ for (var index = 0; index <= names.length; index++) {
         alert(names[index] + " is found at index " + index);
     }
 }
-
+// print a number table
 var num = prompt("Enter a number to print a its table: ");
 for (let i = 1; i < 11; i++) {
     console.log(num + " x " + i + " = " + (num * i),"<br>");
     
 }
+
+// break & continue in loop 
+console.log("continue & break example:");
+for (let i = 0; i < 10; i++) {
+    if (i == 3){
+        // to skip present iteration 
+        console.log("skipping the iteration", i);
+        continue;
+    }
+    if (i == 6) {
+        // to break the loop 
+        break;
+    }
+    console.log("i =", i);
+}
+console.log("loop ended!");
+
+// nested for loop
+console.log("Before nested loop");
+for(let i = 0; i < 4; i++){
+    for(let j = 0; j < 3; j++){
+        console.log("i =", i, "j =", j);
+    }
+}
+console.log("After nested loop");

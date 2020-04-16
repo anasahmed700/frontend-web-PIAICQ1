@@ -12,15 +12,25 @@ var mytext = "in World War II 75 million people were died :(";
 var banned_word = "World War II";
 var alternet_word = "the second world war";
 var firstChar = mytext.indexOf(banned_word);
+// if indexOf could not found, it returns -1
 if (firstChar !== -1) {
     mytext = mytext.slice(0, firstChar) + alternet_word + mytext.slice(firstChar + banned_word.length);
 }
 console.log(mytext);
 
-// get last index 
+// get different index of same string 
 var text = "To be or not to be.";
-var segIndex = text.lastIndexOf("be");
-console.log(segIndex);
+// indexOf('string', position_index)
+var startIndex = text.indexOf('be');
+var fromIndex = text.indexOf('be', 10);
+var reverseIndex = text.lastIndexOf("be");
+var fromIndexReverse = text.lastIndexOf("be", 10);
+console.log(text);
+console.log(startIndex);// 3
+console.log(fromIndex);// 16
+console.log(reverseIndex);// 16
+console.log(fromIndexReverse);// 3
+console.log(text.indexOf('z')); // -1
 
 // Replacing characters
 var newtext = `Cause of World War II: Hitler's invasion of Poland in September 1939 drove Great Britain and 

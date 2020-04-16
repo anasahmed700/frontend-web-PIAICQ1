@@ -24,14 +24,14 @@ console.log(`${decimal_num} to the floor is ${Math.floor(decimal_num)}`);
 // 27: Generating random Number
 alert("Generating a random number!");
 var bigDecimal = Math.random();
-console.log("Random number is", bigDecimal);
+console.log("Random number from 0 to 1;", bigDecimal);
 alert("Multiplying by 6 & adding 1 to generate random number between range of 1 to 6:");
 var rangedNum = (bigDecimal*6) + 1;
 console.log("Ranged number is", rangedNum);
 
-alert("rounding off the Ranged number!");
-var possibleNum = Math.round(rangedNum);
-console.log(`Whole number of ${rangedNum} is ${possibleNum}`);
+alert("rounding off the Ranged number to get dice!");
+var dice = Math.floor(rangedNum);
+console.log(`Whole number of ${rangedNum} is ${dice}`);
 
 // 28: converting String to integer & float 
 var currentAge = prompt("Enter your age: ");
@@ -47,7 +47,7 @@ var taxRate = 6.5;
 var total = (price / taxRate) + price;
 console.log("Total price is",total);
 fixedTotal = total.toFixed(2);
-console.log(fixedTotal);
+console.log("Price fixed to two decimal places:", fixedTotal);
 
 // here toFixed() method rounds off 5 to floor not to ceil
 var num = 1.555;

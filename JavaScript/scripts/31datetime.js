@@ -25,8 +25,9 @@ var hrs = d.getHours();// it will return you a number of current hour since midn
 var mins = d.getMinutes();// it will return you a number of minutes since last hour from 0 to 59
 var sec = d.getSeconds();// it will return you a number of seconds since last minute from 0 to 59
 var millsec = d.getMilliseconds();// it will return you a number of milliseconds since last second from 0 t0 999
+// get Unix Time timestamp in milliseconds since 1st jan 1970 
 var millsSince = d.getTime();// it will gives you the number of milliseconds that have elapsed since midnight, Jan. 1, 1970.
-console.log(millsSince);
+console.log("Unix Time/timestamp in ms:", millsSince);
 console.log(typeof(millsSince));
 
 //33: Specifying a date and time
@@ -41,7 +42,7 @@ console.log("extracting remaining time in days from now...");
 var daysDiff = Math.floor(msDiff / (1000*60*60*24));
 console.log("extracted time in days:", daysDiff);
 
-// 34: Changing elements of a date and time You can
+// 34: Changing elements of a date object
 var d = new Date();
 d.setFullYear(2001);
 d.setMonth(11);
@@ -50,3 +51,14 @@ d.setHours(13);
 d.setMinutes(05);
 d.setSeconds(55);
 console.log(d);
+
+// calculate time difference 
+var date1 = new Date("Aug 03 2019 13:30:15");
+var date2 = new Date('Oct 08 2019 23:30:15');
+
+var timeDiff = date2.getTime() - date1.getTime();
+console.log('time difference:', timeDiff);
+var msInDay = 24 * 60 * 60 * 1000;
+console.log('ms in a day:', msInDay);
+var daysDiff = timeDiff/msInDay;
+console.log('difference in days:', Math.floor(daysDiff));

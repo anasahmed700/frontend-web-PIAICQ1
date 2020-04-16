@@ -19,6 +19,19 @@ console.log("Type of graduate is " + typeof graduate);
 console.log("Type of status is " + typeof status);
 console.log("Type of certification is " + certification);
 
+// variable type casting 
+var age = "25";
+var height = "5.7";
+var num = 4;
+var sum = parseInt(age) + num;
+console.log(sum);
+sum += parseFloat(height);
+console.log(sum);
+sum = String(sum);
+console.log(sum + 100);
+sum = Number(sum);
+console.log(sum - 30);
+
 // concatenation
 var msg = "Hello";
 var a = 3; var b = 5;
