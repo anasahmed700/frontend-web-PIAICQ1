@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment2.5</title>
+
+</head>
+
+<body>
+    <h1>JS Assignment 2 Task 5</h1>
+
+    <script>
+        var randNum = Math.random();
+        var rangeNum = Math.floor(randNum * 10 + 1);
+        var guessNum = parseInt(prompt('Please guess a number 1 to 10: '));
+        if(guessNum === rangeNum){
+            alert('Bingo! correct answer.');
+        } else if(guessNum === rangeNum-1 || guessNum === rangeNum+1){
+            alert('Close enough to the answer.');
+        } else{
+            alert('Wrong answer!')
+        }
+    </script>
+</body>
+
+</html>

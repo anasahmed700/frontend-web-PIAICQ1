@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2.11</title>
+</head>
+<body>
+    <h1>Assignment 2 Task 11</h1>
+
+    <script>
+        var time = parseInt(prompt("enter the time in format like hhmm from 0000 t0 2359: "));
+        if (time >= 0000 && time < 1200) {
+            alert('Good Morning!');
+        } else if(time >= 1200 && time < 1700){
+            alert('Good Afternoon');
+        } else if(time >= 1700 && time < 2100){
+            alert('Good Evening');
+        } else if(time >= 2100 && time < 2359){
+            alert('Good Nignt');
+        }
+    </script>
+</body>
+</html>

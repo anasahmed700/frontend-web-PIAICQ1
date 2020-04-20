@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment2.4</title>
+</head>
+<body>
+    <h1>JS Assignment 2 Task 4</h1>
+    
+
+    <script>
+        var sub1 = parseInt(prompt('enter sub1 marks: '));
+        var sub2 = parseInt(prompt('enter sub2 marks: '));
+        var sub3 = parseInt(prompt('enter sub3 marks: '));
+        var obtained = sub1 + sub2 + sub3;
+        var total = 300;
+        var percent = obtained/total * 100;
+        if(percent >= 80 && percent <= 100){
+            remarks = "Excellent";
+            grade = "A1";
+        } else if(percent >= 70 && percent < 80){
+            remarks = "Good";
+            grade = "A";
+        } else if(percent >= 60 && percent < 70){
+            remarks = "You need to improve";
+            grade = "B";
+        } else{
+            remarks = "Sorry";
+            grade = "Fail";
+        }
+        document.write(`<h1>Marks sheet:</h1>
+        
+        Total marks: ${total}<br>
+        Obtained marks: ${obtained}<br>
+        Percentage: ${percent}%<br>
+        Grade: ${grade}<br>
+        Remarks: ${remarks}`);
+
+
+    </script>
+</body>
+</html>

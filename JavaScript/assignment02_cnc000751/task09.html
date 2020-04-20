@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2.9</title>
+</head>
+<body>
+    <h1>Assignment 2 Task 9</h1>
+
+    <script>
+        var char = prompt('Enter a character to find its vowel or not: ');
+        console.log(char.length);
+        if(char.length !== 1){
+            alert('Please enter only 1 character!')
+        } else{
+            switch(char){
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                    alert('character is vowel!');
+                    break;
+                default:
+                    alert("character is consonent")
+            }
+        }
+    </script>
+</body>
+</html>

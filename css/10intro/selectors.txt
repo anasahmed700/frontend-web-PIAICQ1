@@ -1,0 +1,8 @@
+1: Universal Selector eg: *{}
+2: Type Selector  eg: h1, h2{}
+3: Class Selector eg: .class1 {} or p.class1{}
+4: ID Selector eg: #id1 {}
+5: Child Selector eg: div > ul > li {}
+6: Descendant Selector eg: div li {}
+7: Adjacent Sibling Selector eg: h1 + p {}
+8: General Sibling Selector eg: h1 ~ p {}

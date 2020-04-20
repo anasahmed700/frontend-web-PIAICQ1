@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment2.3</title>
+</head>
+
+<body>
+    <h1>JS Assignment 2 Task 3</h1>
+    <p>conditional statements with pre & post increment/decrement.</p>
+
+    <script>
+        // a.
+        console.log('Example a will be executed');
+        var a = 4;
+        if (++a === 5) {// true due to pre increment applies before expression execution
+            alert("given condition for variable a is true");
+        }
+
+        // b. 
+        var b = 82;
+        if (b++ === 83) {// false due to post increment applies after expression execution
+            alert("given condition for variable b is true");
+        }
+
+        // c. 
+        var c = 12;
+        if (c++ === 13) { // false
+            alert("condition 1 is true");
+        }
+        if (c === 13) { // true because in previous condition there was an post increment in c
+            alert("condition 2 is true");
+        }
+        if (++c < 14) { // false because ++13 === 14
+            alert("condition 3 is true");
+        }
+        if (c === 14) { // true
+            alert("condition 4 is true");
+        }
+
+        // d. 
+        var materialCost = 20000;
+        var laborCost = 2000;
+        var totalCost = materialCost + laborCost;
+        if (totalCost === laborCost + materialCost) { // true
+            alert("The cost equals");
+        }
+
+        // e. 
+        if (true) {
+            alert("True"); // will execute
+        }
+        if (false) {
+            alert("False");
+        }
+
+        // f. 
+        if ("car" < "cat") { // true because r is 18th char and t is 20th in order
+            alert("car is smaller than cat");
+        }
+    </script>
+</body>
+
+</html>
